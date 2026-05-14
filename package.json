@@ -1,16 +1,18 @@
 {
-  "name": "NemoClaw-agritwin-dairy-agentic-ai-platform-backend",
+  "name": "nemoclaw-agritwin-dairy-agentic-ai-platform-backend",
   "version": "0.1.0",
   "type": "module",
   "description": "Backend services for AgriTwin Dairy Agentic AI Platform",
   "main": "src/index.mjs",
   "scripts": {
-    "start": "node src/index.mjs",
+    "start": "node runtime-server.mjs",
+    "dev": "node --watch runtime-server.mjs",
+    "build": "echo build not configured",
     "test": "node --test",
     "lint": "echo lint not configured"
   },
   "dependencies": {
-    "@robo-jedi-pl/agritwin-shared": "workspace:*"
+    "@robo-jedi-pl/agritwin-shared": "github:RoboJediPL/NemoClaw-agritwin-dairy-agentic-ai-platform-shared#main"
   },
   "devDependencies": {}
 }
